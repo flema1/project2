@@ -1,0 +1,76 @@
+<% include ./partials/boilerplate %>
+<% include ./partials/nav %>
+<div class="main-container">
+       <button class= "su" id="capture">Click for Image</button>
+ 
+    <div class="video-container">
+        <video id="player" ></video>
+    </div>
+    <div class="video-button">
+     
+    </div>
+</div>
+
+
+
+
+<canvas id="snapshot" width=320 height=240></canvas>
+
+
+<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+<script src='/src/jquery.js'></script>
+<script>
+  //https://developers.google.com/web/fundamentals/native-hardware/capturing-images/
+  var player = document.getElementById('player'); 
+  var snapshotCanvas = document.getElementById('snapshot');
+  var captureButton = document.getElementById('capture');
+  var handleSuccess = function(stream) {
+    // Attach the video stream to the video element and autoplay.
+    player.srcObject = stream;
+  };
+  captureButton.addEventListener('click', function() {
+    var context = snapshot.getContext('2d');
+    // Draw the video frame to the canvas.
+    context.drawImage(player, 0, 0, snapshotCanvas.width, 
+        snapshotCanvas.height);
+snapshotCanvas.getContext('2d').getImageData(0,0,snapshotCanvas.width, snapshotCanvas.height)
+//snapshotCanvas.toDataURL().substring(22)
+//snapshotCanvas.toDataURL()
+//console.log (snapshotCanvas.toDataURL().substring(22));
+console.log ("bob"); 
+  
+ 
+  responsiveVoice.speak("Image has been taken");
+  
+///Aj
+  $.ajax({
+  type: "POST",
+  url: "/envi/transferImage",
+//   async:false,
+  data: { imagedata: snapshotCanvas.toDataURL('image/jpeg').substring(23) },
+  success:   function(){
+    //alert("image has been transfered");
+      window.location = '/envi/mostRecent'  //redirects upon success
+     // window.location = 'https://safe-dawn-77961.herokuapp.com/envi/mostRecent'
+  },
+
+}).then(
+   
+
+    //   window.location='http://google.com'
+);
+//Aj
+  });
+  navigator.mediaDevices.getUserMedia({video: true})
+      .then(handleSuccess);
+
+
+
+     
+
+
+</script>
+
+
+
+ <% include ./partials/end %>

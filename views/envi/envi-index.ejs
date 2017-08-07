@@ -1,0 +1,50 @@
+<% include ../partials/boilerplate %>
+
+  <% include ../partials/nav %>   
+  
+    
+<div class="container">
+ 
+<% data.forEach(data => { %>
+ <div class="main">
+                <p><%= data.keyone %></p>
+                <p><%= data.keytwo %></p>
+                <p><%= data.keythree %></p>
+                <p><%= data.keyfour %></p>  
+                <p><%= data.keyfive %></p>  
+                <p><%= data.keysix %></p>  
+                <p><%= data.keyseven %></p>  
+                <p><%= data.keyeight %></p>  
+                <p><%= data.keynine %></p>  
+                <p><%= data.keyten %></p>  
+                <p><%= data.keyelev %></p>  
+                <p><%= data.keytwelve %></p> 
+
+
+   
+   <p class="num"><%= data.id%></p>  
+ 
+
+<div class='links'>
+
+
+      <a href='/envi/<%= data.id %>'>View</a>
+             <a href='/envi/<%= data.id %>/edit'>Edit</a>
+          <form method='POST' action='/envi/<%= data.id %>?_method=DELETE'>
+            <input  type="submit" value="Delete" id="capture" class="bu"/>
+          </form>
+        </div>
+
+</div>
+
+<% }) %>
+
+
+ </div>
+<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+<script src='/src/jquery.js'></script>
+
+
+
+
+ <% include ../partials/end %>

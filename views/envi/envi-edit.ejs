@@ -1,0 +1,23 @@
+<% include ../partials/boilerplate %>
+<% include ../partials/nav %>
+<div class='register-container'>
+
+<form  method='POST' action='/envi/<%= data.id %>?_method=PUT'>
+ 
+  <input type='text' name='keyone' value='<%= data.keyone%>' />
+  <input type='text' name='keytwo' value='<%= data.keytwo %>' />
+  <input type='text' name='keythree' value='<%= data.keythree %>' />
+  <input type='text' name='keyfour' value='<%= data.keyfour %>' />
+  <input type='text' name='keyfive' value='<%= data.keyfive %>' />
+  <input type='text' name='keysix' value='<%= data.keysix %>' />
+  <input type='text' name='keyseven' value='<%= data.keyseven %>' />
+  <input type='text' name='keyeight' value='<%= data.keyeight %>' />
+  <input type='text' name='keynine' value='<%= data.keynine %>' />
+  <input type='text' name='keyten' value='<%= data.keyten %>' />
+  <input type='text' name='keyele' value='<%= data.keyfour %>' />
+  <input type='text' name='keytwelve' value='<%= data.keyfour %>' />
+  <input type='submit' value='Update' id="capture" />
+</form>
+</div >
+
+<% include ../partials/end %>

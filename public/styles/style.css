@@ -1,0 +1,143 @@
+body {
+     
+}
+.video-container{
+    width: 90%;
+    display: flex; 
+    justify-content: center;
+    padding-left: 50px;  
+    /*position: fixed; */
+}
+
+#capture {
+    /*padding: 30px;*/
+    background: #1F3A93;
+    border-radius: 20px;
+    width: 150px;
+    /*height: 30px;*/
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+
+
+.main-nav {
+    /*background: #EEEEEE;*/
+    background: rgba(49,81,217,0.9);
+    /*height: 180px;*/
+    margin-bottom: 5px; 
+    width: 100%; 
+}
+.nav-ul {
+    display: flex;
+    justify-content: space-around;
+}
+.logo {
+
+    width: 520px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.nav-ul li a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 4px;
+    color: #2a2a2a;
+}
+.nav-ul li a:hover {
+    font-weight: 700;
+}
+.welcome {
+    width: 40%;
+    margin: 0 auto;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 250px;
+}
+.welcome a {
+    padding: 30px;
+    background: #1F3A93;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.welcome a:hover {
+     background: #EEEEEE;
+     color: #2a2a2a;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    /*background: red; */
+    flex-direction: column;
+}
+
+
+.main{
+    background: grey; 
+    font-family: 'Anton', sans-serif;
+    font-size: 6em;
+    text-align: center;
+    /*margin-top: 2em;*/
+      margin-bottom: 5px; 
+    padding-top: 1em;
+    /*border: 0.5px solid red ;*/
+}
+.main p, .main a{
+    margin-bottom: 1 em; 
+        text-decoration: none;
+}
+.links a:hover {
+    font-weight: 700;
+    color: yellow; 
+}
+
+.links a{
+  
+        color: white;
+        text-decoration: none;
+         margin-top: 20px; 
+}
+
+
+.main .num{
+    display: none; 
+}
+.bu {
+     border:none;
+      font-size:10px;  
+    
+}
+
+.register-container, .login-container{
+    margin-top: 100px; 
+    width: 100%; 
+    display: flex;
+    /*align-content: center; */
+    justify-content: center;  
+
+}
+.register-container input , .login-container input{
+    font-size: 25px; 
+}

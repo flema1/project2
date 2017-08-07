@@ -1,0 +1,61 @@
+<% include ../partials/boilerplate %>
+<% include ../partials/nav %>
+<div class="container">
+   <div class="main">
+   <p id ="keyone"><%= envi.keyone %></p>
+   <p id ="keytwo"><%=  envi.keytwo %></p>
+   <p id ="keythree"><%= envi.keythree %></p>
+   <p id ="keyfour"><%= envi.keyfour%></p>  
+   <p id ="keyfive"><%= envi.keyfive%></p>  
+   <p id ="keysix"><%= envi.keysix%></p>  
+   <p id ="keyseven"><%= envi.keyseven%></p>  
+   <p id ="keyeight"><%= envi.keyeight%></p>  
+   <p id ="keynine"><%= envi.keynine%></p>  
+   <p id ="keyten"><%= envi.keyten%></p>
+   <p id ="keyeleven"><%= envi.keyele%></p> 
+   <p id ="keytwelve"><%= envi.keytwelve%></p>         
+   <h1 class= "num"><%= envi.id%></h1> 
+
+<div class='links'>
+  <a href='/envi/<%= envi.id %>/edit'>Edit</a>
+  <form method='POST' action='/envi/<%= envi.id %>?_method=DELETE'>           
+      <input type="submit" value="Delete" id="capture"class="bu"/>
+  </form>
+  
+  </div>
+  
+  </div>
+</div>
+
+<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+<script src='/src/jquery.js'></script>
+<script >
+
+    const keyone=$('#keyone').text(),
+          keytwo=$('#keytwo').text(),
+          keythree=$('#keythree').text(),
+          keyfour=$('#keyfour').text();
+          keyfive=$('#keyfive').text();
+          keysix=$('#keysix').text();
+          keyseven=$('#keyseven').text();
+          keyeight=$('#keyeight').text();
+          keynine=$('#keynine').text();
+          keyten=$('#keyten').text();
+          keyele=$('#keyele').text();
+          keytwelve=$('#keytwelve').text();
+
+          responsiveVoice.speak(keyone);
+          responsiveVoice.speak(keytwo);
+          responsiveVoice.speak(keythree);
+          responsiveVoice.speak(keyfour);
+          responsiveVoice.speak(keyfive);
+          responsiveVoice.speak(keysix);
+          responsiveVoice.speak(keyseven);
+          responsiveVoice.speak(keyeight);
+          responsiveVoice.speak(keynine);
+          responsiveVoice.speak(keyten);
+          responsiveVoice.speak(keyele);
+          responsiveVoice.speak(keytwelve);
+</script>
+
+<% include ../partials/end %>

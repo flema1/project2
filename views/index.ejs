@@ -1,0 +1,27 @@
+<% include ./partials/boilerplate %>
+<% include ./partials/nav %>
+
+    <div class= "container">
+        <div class= "main">
+            <% data.forEach(data => { %>
+                <p><%= data.keyOne %></p>
+                <p><%=  data.keyTwo %></p>
+                <p><%= data.keyThree %></p>
+                <p><%= data.keyFour %></p>  
+                <p><%= data.keyFive %></p>  
+                <p><%= data.keySix %></p>  
+                <p><%= data.keySeven %></p>  
+                <p><%= data.keyEight %></p>  
+                <p><%= data.keyNine %></p>  
+                <p><%= data.keyTen %></p>  
+                <p><%= data.keyElev %></p>  
+                <p><%= data.keyTwelve %></p>  
+            <% }) %>
+        </div>
+    </div>
+
+
+<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+<script src='/src/jquery.js'></script>
+
+ <% include ./partials/end %>

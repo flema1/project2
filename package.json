@@ -1,0 +1,33 @@
+{
+  "name": "herokurepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "debugger": "DEBUG=*:* npm run dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "all": "0.0.0",
+    "base64-img": "^1.0.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.2",
+    "clarifai": "^2.2.0",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "express-session": "^1.15.5",
+    "method-override": "^2.3.9",
+    "morgan": "^1.8.2",
+    "node-webcam": "^0.4.3",
+    "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "pg-promise": "^6.3.6"
+  }
+}
